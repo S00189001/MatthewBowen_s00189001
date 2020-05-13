@@ -15,14 +15,19 @@ using System.Windows.Shapes;
 
 namespace MatthewBowen_s00189001
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : Window
     {
+        PhoneData db = new PhoneData();
+
+
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
