@@ -13,5 +13,12 @@ namespace MatthewBowen_s00189001
         public string OperatingSystem { get; set; }
         public string OS_Image { get; set; }
         public string Phone_Image { get; set; }
+
+        public void IncreasePrice(decimal _percentage)
+        {
+            decimal Percentage = Price / _percentage;
+            Price += Percentage;
+
+        }
     }
 }
