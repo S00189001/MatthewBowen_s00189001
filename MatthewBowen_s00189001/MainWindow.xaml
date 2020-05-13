@@ -15,11 +15,14 @@
 
             <StackPanel Orientation="Horizontal" Margin="5">
 
-                <Image Source="{Binding Name}" Width="75"/>
+                <Image Source="{Binding Path=OS_Image}"/>
 
-                <StackPanel>
-                    <TextBlock Text="{Binding OS_Image}"/>
-                </StackPanel>
+                 <TextBlock Text="{Binding Path=Name}"
+                            VerticalAlignment="Center"
+                            HorizontalAlignment="Left"
+                            Margin="5"
+                            />
+                
 
             </StackPanel>
             
@@ -47,6 +50,7 @@
                  Grid.Row="1" Grid.Column="1"
                  Grid.RowSpan="3"
                  ItemTemplate="{StaticResource UI_ListboxTemplate}"
+                 SelectionChanged="UI_PhoneDataListBox_SelectionChanged"
                  />
 
         <TextBlock x:Name="UI_PriceTB"

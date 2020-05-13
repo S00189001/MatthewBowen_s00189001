@@ -27,7 +27,24 @@ namespace MatthewBowen_s00189001
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
+            var query = from p in db.PhoneDetails
+                        select p;
 
+            
+            UI_PhoneDataListBox.ItemsSource = query.ToList();
+
+            UI_PhoneDataListBox.SelectedItem = 0;
+
+         
+        }
+
+        private void UI_PhoneDataListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            Phone selectedPhone = UI_PhoneDataListBox.SelectedItem as Phone;
+
+            UI_PriceTB.Text = string.Format("Price: {0:C}", selectedPhone.Price);
+
+            UI_DIsplayImage.Source = new BitmapImage(new Uri(selectedPhone.Phone_Image, UriKind.Relative));
         }
     }
 }
