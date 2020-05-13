@@ -16,9 +16,10 @@ namespace MatthewBowen_s00189001
 
         public void IncreasePrice(decimal _percentage)
         {
-            decimal Percentage = Price / _percentage;
-            Price += Percentage;
+            Price = 100m;
 
+            decimal Percentage = Price / _percentage * 100;
+            Price = Price + Percentage;
         }
     }
 }
