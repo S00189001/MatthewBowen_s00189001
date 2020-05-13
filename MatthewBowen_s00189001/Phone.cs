@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -21,5 +22,13 @@ namespace MatthewBowen_s00189001
             decimal Percentage = Price / _percentage * 100;
             Price = Price + Percentage;
         }
+                
+    }
+
+    public class PhoneData : DbContext
+    {
+        public PhoneData() : base("PDDatabase") { }
+
+        public DbSet<Phone> PhoneDetails { get; set; }
     }
 }

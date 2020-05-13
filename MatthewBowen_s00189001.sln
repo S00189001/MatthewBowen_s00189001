@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MatthewBowen_s00189001", "M
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest", "UnitTest\UnitTest.csproj", "{E8C10CE1-7C79-4FCC-8C65-FB221748FD63}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBManager", "DBManager\DBManager.csproj", "{E52E2D2C-6E81-411F-9B5A-8BA644B03329}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{E8C10CE1-7C79-4FCC-8C65-FB221748FD63}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E8C10CE1-7C79-4FCC-8C65-FB221748FD63}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E8C10CE1-7C79-4FCC-8C65-FB221748FD63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E52E2D2C-6E81-411F-9B5A-8BA644B03329}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E52E2D2C-6E81-411F-9B5A-8BA644B03329}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E52E2D2C-6E81-411F-9B5A-8BA644B03329}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E52E2D2C-6E81-411F-9B5A-8BA644B03329}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
