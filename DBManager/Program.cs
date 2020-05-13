@@ -16,8 +16,8 @@ namespace DBManager
             using(PDdb)
             {
                 // Create two Phone objects
-                Phone p1 = new Phone() { Name = "Samsung S20", Price = 500, OperatingSystem = "Android", OS_Image = "/images/android.png", Phone_Image = "/images/s20.jpg" };
-                Phone p2 = new Phone() { Name = "iPhone 11", Price = 600, OperatingSystem = "IOS", OS_Image = "/images/apple.png", Phone_Image = "/images/iPhone11.jpg" };
+                Phone p1 = new Phone() { PhoneID = 1, Name = "Samsung S20", Price = 500, OperatingSystem = "Android", OS_Image = "/images/android.png", Phone_Image = "/images/s20.jpg" };
+                Phone p2 = new Phone() { PhoneID = 2, Name = "iPhone 11", Price = 600, OperatingSystem = "IOS", OS_Image = "/images/apple.png", Phone_Image = "/images/iPhone11.jpg" };
 
                 // Add Phone objects to database
                 Console.WriteLine("Adding Phone Details to Database...");

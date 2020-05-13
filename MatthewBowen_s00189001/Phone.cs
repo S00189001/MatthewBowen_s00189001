@@ -9,6 +9,7 @@ namespace MatthewBowen_s00189001
 {
     public class Phone
     {
+        public int PhoneID { get; set; }
         public string Name { get; set; }
         public decimal Price { get; set; }
         public string OperatingSystem { get; set; }
